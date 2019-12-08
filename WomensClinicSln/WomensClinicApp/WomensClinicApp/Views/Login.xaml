@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="WomensClinicApp.Views.Login"  BackgroundColor="#534666">
+
+<StackLayout VerticalOptions="CenterAndExpand">
+        <Label Text="Login"/>
+        <Entry Text="ID number" />
+        <Entry Text="Enter Your Password"/>
+        <Button Text="Send"  Command="{Binding CommandSend}" CornerRadius="50"/>
+    </StackLayout>
+    
+</ContentPage>
+    

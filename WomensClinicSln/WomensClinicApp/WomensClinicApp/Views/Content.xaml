@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="WomensClinicApp.Views.Content" BackgroundColor="#FADFE3" >
+  
+<StackLayout>
+
+
+        <Grid Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"  />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="150" />
+                <RowDefinition Height="150" />
+                <RowDefinition Height="150" />
+            </Grid.RowDefinitions>
+
+            <Label Text=" Women's Clinic" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="40" FontAttributes="Bold" />
+            <Label Text=" Stay Concious About Your health." Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="0,70,0,0" />
+            <Button  Text="Contreceptive" Grid.Row="1" Grid.Column="0" Command="{Binding ConCommand}" />
+            <Button Text=" Appointment" Grid.Row="1" Grid.Column="1" Command="{Binding AppCommand}"/>
+            <Button Text="Hygien" Grid.Row="2" Grid.Column="0" Command="{Binding HyCommand}" />
+            <Button Text="Reminder" Grid.Row="2" Grid.Column="1" Command="{Binding ReCommand}"/>
+            
+            <!--BackgroundColor="#FADFE3"-->
+
+
+        </Grid>
+</StackLayout>
+</ContentPage>

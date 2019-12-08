@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WomensClinicApp.Views.MainPage"
+             Title="{Binding Title}" BackgroundColor="#CD5E77">
+
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Women's Clinic" TextColor="White" FontSize="50" FontAttributes="Bold" FontFamily="Times New Roman"/>
+        <Button Text="Log in" Command="{Binding LoginCommand}" />
+        <Button Text="Don't have an Account? Sign Up" FontSize="Small" TextColor="White" BackgroundColor="Transparent" Command="{Binding SignupCommand}"/>
+    </StackLayout>
+
+</ContentPage>
