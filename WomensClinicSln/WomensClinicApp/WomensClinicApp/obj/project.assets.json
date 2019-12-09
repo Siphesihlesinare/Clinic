@@ -781,11 +781,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj",
+      "projectUniqueName": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj",
       "projectName": "WomensClinicApp",
-      "projectPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj",
+      "projectPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj",
       "packagesPath": "C:\\Users\\Siphesihle.Sinare\\.nuget\\packages\\",
-      "outputPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\obj\\",
+      "outputPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

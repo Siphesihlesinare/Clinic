@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\WomensClinicApp.iOS.csproj": {}
+    "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\WomensClinicApp.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\WomensClinicApp.iOS.csproj": {
+    "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\WomensClinicApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\WomensClinicApp.iOS.csproj",
+        "projectUniqueName": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\WomensClinicApp.iOS.csproj",
         "projectName": "WomensClinicApp.iOS",
-        "projectPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\WomensClinicApp.iOS.csproj",
+        "projectPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\WomensClinicApp.iOS.csproj",
         "packagesPath": "C:\\Users\\Siphesihle.Sinare\\.nuget\\packages\\",
-        "outputPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\obj\\",
+        "outputPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj": {
-                "projectPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj"
+              "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj": {
+                "projectPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj": {
+    "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj",
+        "projectUniqueName": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj",
         "projectName": "WomensClinicApp",
-        "projectPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj",
+        "projectPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj",
         "packagesPath": "C:\\Users\\Siphesihle.Sinare\\.nuget\\packages\\",
-        "outputPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\obj\\",
+        "outputPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

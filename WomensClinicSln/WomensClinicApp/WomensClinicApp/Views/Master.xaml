@@ -2,14 +2,25 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:prism="http://prismlibrary.com"
+                  xmlns:converters="clr-namespace:WomensClinicApp.Converters"
                   prism:ViewModelLocator.AutowireViewModel="True"
                   x:Class="WomensClinicApp.Views.Master" BackgroundColor="White">
 
+    
+    
     <MasterDetailPage.Master>
         <ContentPage Title="Menu" BackgroundColor="White">
-            
+            <ContentPage.Resources>
+            <ResourceDictionary>
+                    <converters:InverseBoolConverter x:Key="invBool" />
+            </ResourceDictionary>
+            </ContentPage.Resources>
+
             <StackLayout Padding="20">
                 <Image Source="lolo4.png" />
+
+
+                <Image HeightRequest="400" Source="lolo4.jpg" IsVisible="{Binding IsLoggedIn, Converter={StaticResource invBool}} "/>
 
                 <Grid  BackgroundColor="White">
     <Grid.ColumnDefinitions>
@@ -28,19 +39,19 @@
                     </Grid.RowDefinitions>
                     
                 <!-- TODO: // Update the Layout and add some real menu items  -->
-                    <Button Text="Home" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Content" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Transparent" />
-                    <Image Source="home.jpg" Grid.Row="1" Grid.Column="0" />
-                    <Button Text="View Folder" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Content" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"  BackgroundColor="Transparent"/>
-                    <Image Source="folder.jpg" Grid.Row="2" Grid.Column="0" />
-                    <Button Text="Appontments" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Appointements" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Transparent" />
-                    <Image Source="cal3.jpg" Grid.Row="3" Grid.Column="0" />
-                    <Button Text="Contraceptives" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Contraceptive"  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Transparent" />
-                    <Image Source="con1.jpg" Grid.Row="4" Grid.Column="0" />
-                    <Button Text="Hygien" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Hygien"  Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Transparent"/>
-                    <Image Source="hy3.png" Grid.Row="5" Grid.Column="0" />
-                    <Button Text="Map" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Content"  Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Transparent"/>
-                    <Image Source="map2.png" Grid.Row="6" Grid.Column="0" />
-                    <Button Text="Log Out" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Login"  Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black"/>
+
+                    <Button Text="Home" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Content" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Transparent" IsVisible="{Binding IsLoggedIn}"/>
+                    <Image Source="home.jpg" Grid.Row="1" Grid.Column="0" IsVisible="{Binding IsLoggedIn}"/>
+                    <Button Text="View Folder" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Content" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"  BackgroundColor="Transparent"  IsVisible="{Binding IsLoggedIn}"/>
+                    <Image Source="folder.jpg" Grid.Row="2" Grid.Column="0"  IsVisible="{Binding IsLoggedIn}"/>
+                    <Button Text="Appontments" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Appointements" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Transparent"  IsVisible="{Binding IsLoggedIn}"/>
+                    <Image Source="cal3.jpg" Grid.Row="3" Grid.Column="0"  IsVisible="{Binding IsLoggedIn}"/>
+                    <Button Text="Contraceptives" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Contraceptive"  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Transparent"  IsVisible="{Binding IsLoggedIn}"/>
+                    <Image Source="con1.jpg" Grid.Row="4" Grid.Column="0"  IsVisible="{Binding IsLoggedIn}"/>
+                    <Button Text="Hygien" Command="{Binding HCommand}" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Transparent" IsVisible="{Binding IsLoggedIn}"/>
+                    <Image Source="hy3.png" Grid.Row="5" Grid.Column="0"  IsVisible="{Binding IsLoggedIn}"/>
+
+                    <Button Text="Log Out" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/Login"  Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black"  IsVisible="{Binding IsLoggedIn}"/>
 
                 </Grid>
 

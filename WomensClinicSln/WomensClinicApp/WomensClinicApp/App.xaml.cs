@@ -17,7 +17,8 @@ namespace WomensClinicApp
          * This imposes a limitation in which the App class must have a default constructor. 
          * App(IPlatformInitializer initializer = null) cannot be handled by the Activator.
          */
-        public App() : this(null) {
+        public App() : this(null)
+        {
 
         }
 
@@ -26,7 +27,7 @@ namespace WomensClinicApp
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            
+
             await NavigationService.NavigateAsync("Master/NavigationPage/MainPage");
         }
 
@@ -44,6 +45,7 @@ namespace WomensClinicApp
             containerRegistry.RegisterForNavigation<Hygien, HygienViewModel>();
             containerRegistry.RegisterForNavigation<Reminders, RemindersViewModel>();
             containerRegistry.RegisterForNavigation<Master, MasterViewModel>();
+
         }
     }
 }

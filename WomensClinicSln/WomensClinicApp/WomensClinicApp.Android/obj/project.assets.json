@@ -2260,11 +2260,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.Android\\WomensClinicApp.Android.csproj",
+      "projectUniqueName": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.Android\\WomensClinicApp.Android.csproj",
       "projectName": "WomensClinicApp.Android",
-      "projectPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.Android\\WomensClinicApp.Android.csproj",
+      "projectPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.Android\\WomensClinicApp.Android.csproj",
       "packagesPath": "C:\\Users\\Siphesihle.Sinare\\.nuget\\packages\\",
-      "outputPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.Android\\obj\\",
+      "outputPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2285,8 +2285,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj": {
-              "projectPath": "C:\\Xamarin\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj"
+            "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj": {
+              "projectPath": "C:\\Xamarin\\Clinic\\WomensClinicSln\\WomensClinicApp\\WomensClinicApp\\WomensClinicApp.csproj"
             }
           }
         }

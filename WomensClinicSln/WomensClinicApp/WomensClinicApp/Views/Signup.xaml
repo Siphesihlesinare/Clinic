@@ -4,25 +4,32 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="WomensClinicApp.Views.Signup">
-    <StackLayout VerticalOptions="CenterAndExpand">
-        <Grid>
-            <Grid.ColumnDefinitions>
+    <StackLayout VerticalOptions="CenterAndExpand" >
+        <Grid Padding="10">
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
             </Grid.RowDefinitions>
 
-            <Label Text="Sign Up"/>
-        <Entry Text="{Binding UsersDetails.Name}" Placeholder="Name" />
-        <Entry Text="{Binding UsersDetails.Surname}" Placeholder="Surname" />
-        <Entry Text="{Binding UsersDetails.IDN}" Placeholder="ID Number" />
-        <Entry Text="{Binding UsersDetails.Adress}" Placeholder="Address" />
-        <Entry Text="{Binding UsersDetails.Phone}" Placeholder="Cell Phone Number" />
-        <Entry Text="{Binding UsersDetails.Password}" Placeholder="Password" />
-        <Entry Text="{Binding UsersDetails.Confirm}" Placeholder="Confirm Password" />
-        <Button Text="Submit"  Command="{Binding SubmitCommand}"/>
-           
+            <Image Source="user1.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2 "/>
+            <Entry Text="{Binding UsersDetails.Name}" Placeholder="Name"  Grid.Column="0" Grid.Row="1" Margin="15,0" />
+            <Entry Text="{Binding UsersDetails.Surname}" Placeholder="Surname"  Grid.Column="1" Grid.Row="1" Margin="15,0"/>
+            <Entry Text="{Binding UsersDetails.Email}" Placeholder="Email Adress"  Grid.Column="0" Grid.Row="2" Margin="15,0"/>
+            <Entry Text="{Binding UsersDetails.IDN}" Placeholder="ID Number"  Grid.Column="1" Grid.Row="2" Margin="15,0"/>
+            <Entry Text="{Binding UsersDetails.Adress}" Placeholder="Address"  Grid.Column="0" Grid.Row="3" Margin="15,0"/>
+            <Entry Text="{Binding UsersDetails.Phone}" Placeholder="Cell Phone Number"  Grid.Column="1" Grid.Row="3" Margin="15,0"/>
+            <Entry Text="{Binding UsersDetails.Password}" Placeholder="Password"  Grid.Column="0" Grid.Row="4" Margin="15,0"/>
+            <Entry Text="{Binding UsersDetails.Confirm}" Placeholder="Confirm Password"  Grid.Column="1" Grid.Row="4" Margin="15,0" />
+       
 </Grid>
+        <Button Text="Submit"  Command="{Binding SubmitCommand}"/>
+
     </StackLayout>
 </ContentPage>

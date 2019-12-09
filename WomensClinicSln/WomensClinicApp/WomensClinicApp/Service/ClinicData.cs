@@ -30,10 +30,16 @@ namespace WomensClinicApp.Service
         {
             return database.Table<Users>().ToListAsync();
         }
+        
 
         public Task<List<Users>> GetItemsNotDoneAsync()
         {
             return database.QueryAsync<Users>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
+        }
+
+        public Task<Users> GetUserByIDNumber(int IdNumber)
+        {
+            return database.Table<Users>().Where(x => x.IDN == IdNumber).FirstOrDefaultAsync();
         }
 
         public Task<Users> GetItemAsync(int id)

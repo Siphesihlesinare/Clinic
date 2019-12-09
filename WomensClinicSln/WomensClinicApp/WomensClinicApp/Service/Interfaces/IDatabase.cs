@@ -13,6 +13,7 @@ namespace WomensClinicApp.Service.Interfaces
          Task<Users> GetItemAsync(int id);
         Task<int> SaveItemAsync(Users item);
          Task<int> DeleteItemAsync(Users item);
-       
+        Task<Users> GetUserByIDNumber(int IdNumber);
+     
     }
 }

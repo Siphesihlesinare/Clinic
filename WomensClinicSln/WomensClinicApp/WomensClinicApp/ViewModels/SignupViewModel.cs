@@ -18,14 +18,14 @@ namespace WomensClinicApp.ViewModels
             _submitCommand ?? (_submitCommand = new DelegateCommand(ExecuteSubmitCommand));
 
         private Users users;
-        public Users UsersDetails;
+        public Users UsersDetails { get; set; }
 
 
 
-        public int MyProperty { get; set; }/**/
+      
         private async void ExecuteSubmitCommand()
         {
-            var database = new ClinicData ();
+            //var database = new ClinicData ();
             //await connection.(UsersDetails);
 
             await _database.SaveItemAsync(UsersDetails);
