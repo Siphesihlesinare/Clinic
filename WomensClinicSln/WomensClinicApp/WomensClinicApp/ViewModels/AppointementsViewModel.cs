@@ -6,11 +6,17 @@ using System.Linq;
 
 namespace WomensClinicApp.ViewModels
 {
-    public class AppointementsViewModel : BindableBase
+    public class AppointementsViewModel : ViewModelBase
     {
-        public AppointementsViewModel()
-        {
+       
+            private DelegateCommand _make;
+        public DelegateCommand Make =>
+            _make ?? (_make = new DelegateCommand(ExecuteMake));
 
+        private async void ExecuteMake()
+        {
+            await NavigationService.NavigateAsync("Reminders");
         }
     }
+    
 }
