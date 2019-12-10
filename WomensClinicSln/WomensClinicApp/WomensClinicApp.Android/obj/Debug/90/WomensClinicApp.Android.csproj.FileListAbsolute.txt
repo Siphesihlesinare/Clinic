@@ -1119,3 +1119,6 @@ C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\De
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\m1.jpg
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\app2.jpg
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\app1.jpg
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\app3.jpg

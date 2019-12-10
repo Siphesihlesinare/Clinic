@@ -21,7 +21,7 @@
 
 
                 <Image HeightRequest="400" Source="lolo4.jpg" IsVisible="{Binding IsLoggedIn, Converter={StaticResource invBool}} "/>
-
+ 
                 <Grid  BackgroundColor="White">
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="40" />
