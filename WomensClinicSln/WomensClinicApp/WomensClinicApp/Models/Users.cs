@@ -23,6 +23,12 @@ namespace WomensClinicApp.ViewModels
         public string Password { get; set; }
 
         public string Confirm { get; set; }
+         public string Reason { get; set; }
+
+        public  int Time { get; set; }
+
+        public DateTime Date { get; set; }
+
 
 
     }

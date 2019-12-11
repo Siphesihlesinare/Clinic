@@ -1,5 +1,6 @@
 ﻿using Prism;
 using Prism.Ioc;
+using WomensClinicApp.Models;
 using WomensClinicApp.Service;
 using WomensClinicApp.Service.Interfaces;
 using WomensClinicApp.ViewModels;
@@ -34,10 +35,11 @@ namespace WomensClinicApp
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<IDatabase, ClinicData>();
+            containerRegistry.RegisterSingleton<IProfile, Profile>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
 
-            containerRegistry.RegisterForNavigation<Login, LoginViewModel>();
+            containerRegistry.RegisterForNavigation<WomensClinicApp.Views.Login, LoginViewModel>();
             containerRegistry.RegisterForNavigation<Signup, SignupViewModel>();
             containerRegistry.RegisterForNavigation<Content, ContentViewModel>();
             containerRegistry.RegisterForNavigation<Contraceptive, ContraceptiveViewModel>();

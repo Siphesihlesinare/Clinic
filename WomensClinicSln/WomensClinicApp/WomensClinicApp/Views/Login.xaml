@@ -7,8 +7,8 @@
 
 <StackLayout VerticalOptions="CenterAndExpand">
         <Label Text="Login"/>
-        <Entry Text="{Binding LoginDetails.IdNumber}" Placeholder="ID Number" />
-        <Entry Text="{Binding LoginDetails.Password}" Placeholder="Password" IsPassword="True"/>
+        <Entry Text="{Binding  UserInfo.IDN}" Placeholder="ID Number" />
+        <Entry Text="{Binding  UserInfo.Password}" Placeholder="Password" IsPassword="True"/>
         <Button Text="Send"  Command="{Binding CommandSend}" CornerRadius="50"/>
     </StackLayout>
     

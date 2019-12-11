@@ -60,7 +60,7 @@ namespace WomensClinicApp.ViewModels
             await NavigationService.NavigateAsync("Reminders");
         }
 
-
+         
         public ContentViewModel(INavigationService navigation, IDocumentViewer documentViewer) : base(navigation)
         {
             _pdfPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
