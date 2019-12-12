@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="WomensClinicApp.Views.Login"   BackgroundImageSource="m1.jpg">
+             x:Class="WomensClinicApp.Views.Login" BackgroundImageSource="lo2.png">
 
-<StackLayout VerticalOptions="CenterAndExpand">
-        <Label Text="Login"/>
-        <Entry Text="{Binding  UserInfo.IDN}" Placeholder="ID Number" />
+<StackLayout VerticalOptions="CenterAndExpand" Margin="0,100,0,0">
+        <Label Text="Login" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"/>
+        <Entry Text="{Binding  UserInfo.IDN}" Placeholder="ID Number"  />
         <Entry Text="{Binding  UserInfo.Password}" Placeholder="Password" IsPassword="True"/>
-        <Button Text="Send"  Command="{Binding CommandSend}" CornerRadius="50"/>
+        <Button Text="Log In"  Command="{Binding CommandSend}" CornerRadius="50" />
     </StackLayout>
     
 </ContentPage>

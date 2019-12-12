@@ -4,31 +4,35 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="WomensClinicApp.Views.Reminders">
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Add An Appointment">
-            <!--<ToolbarItem.IconImageSource>
+            --><!--<ToolbarItem.IconImageSource>
                 <OnPlatform x:TypeArguments="ImageSource">
                     <On Platform="Android, UWP" Value="plus.png"/>
                 </OnPlatform>
-            </ToolbarItem.IconImageSource>-->
+            </ToolbarItem.IconImageSource>--><!--
         </ToolbarItem>
-    </ContentPage.ToolbarItems>
-    <ListView ItemsSource="{Binding TeesList}" HasUnevenRows="True"  >
+    </ContentPage.ToolbarItems>-->
+    <ListView  HasUnevenRows="True" ItemsSource="{Binding AllAppointments}" >
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <StackLayout>
                         <FlexLayout Margin="0,0,0,10">
                             <StackLayout Orientation="Horizontal">
-                                <Image Source="tshirt_logo.png" Margin="15,0,20,0" WidthRequest="50"/>
+                              
                                 <StackLayout>
                                     <FlexLayout>
-                                        <Label Text="Date and Time: " FontAttributes="Bold"/>
-                                        <Label Text="{Binding Profile.Date}"/>
+                                        <Label Text="Date: " FontAttributes="Bold"/>
+                                        <Label Text="{Binding Date}"/>
                                     </FlexLayout>
                                     <FlexLayout>
                                         <Label Text="Reason of Consultation: " FontAttributes="Bold"/>
-                                        <Label Text="{Binding Profile.Reason}"/>
+                                        <Label Text="{Binding Reason}"/>
+                                    </FlexLayout>
+                                    <FlexLayout>
+                                        <Label Text="Time: " FontAttributes="Bold"/>
+                                        <Label Text="{Binding Time}"/>
                                     </FlexLayout>
                                 </StackLayout>
                             </StackLayout>

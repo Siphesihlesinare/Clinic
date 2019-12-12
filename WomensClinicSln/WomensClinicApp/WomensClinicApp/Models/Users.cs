@@ -19,17 +19,10 @@ namespace WomensClinicApp.ViewModels
         public string Email { get; set; }
         public int Phone { get; set; }
         public int IDN { get; set; }
-
         public string Password { get; set; }
 
-        public string Confirm { get; set; }
-         public string Reason { get; set; }
-
-        public  int Time { get; set; }
-
-        public DateTime Date { get; set; }
-
-
+        
+        
 
     }
 }

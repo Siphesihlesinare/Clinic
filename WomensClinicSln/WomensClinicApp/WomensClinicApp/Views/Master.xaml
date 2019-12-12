@@ -20,8 +20,11 @@
                 <Image Source="lolo4.png" />
 
 
-                <Image HeightRequest="400" Source="lolo4.jpg" IsVisible="{Binding IsLoggedIn, Converter={StaticResource invBool}} "/>
- 
+
+                <Image Source="plain223.jpg" IsVisible="{Binding IsLoggedIn, Converter={StaticResource invBool}}" 
+                       Scale="1.3" HeightRequest="300"/>
+                
+
                 <Grid  BackgroundColor="White">
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="40" />

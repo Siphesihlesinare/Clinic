@@ -21,7 +21,7 @@ namespace WomensClinicApp.ViewModels
         //private IEventAggregator _eventAggregator;
         private IProfile _profile;
 
-        public Login LoginDetails { get; set; }
+        //public Login LoginDetails { get; set; }
         private IDatabase _database;
 
         private DelegateCommand _commandSend;

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using WomensClinicApp.Models;
 using WomensClinicApp.Service.Interfaces;
 using WomensClinicApp.ViewModels;
 
@@ -20,6 +21,8 @@ namespace WomensClinicApp.Service
 
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<Users>().Wait();
+            database.CreateTableAsync<Appointment>().Wait();
+
         }
 
         private string GetDbPath()
@@ -47,6 +50,17 @@ namespace WomensClinicApp.Service
             return database.Table<Users>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
+        public Task<List<Appointment>> GetAppointmentsByUserId(int userId)
+        {
+            return database.Table<Appointment>().Where(i => i.UserId == userId).ToListAsync();
+        }
+        
+        public Task<int> SaveAppointment(Appointment appointment)
+        {
+                return database.InsertAsync(appointment);
+        }
+
+
         public Task<int> SaveItemAsync(Users item)
         {
             if (item.ID != 0)
@@ -63,5 +77,7 @@ namespace WomensClinicApp.Service
         {
             return database.DeleteAsync(item);
         }
+
+      
     }
 }

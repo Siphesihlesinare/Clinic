@@ -20,7 +20,6 @@ C:\Xamarin\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\netstandard
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\bin\Debug\netstandard2.0\WomensClinicApp.deps.json
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\bin\Debug\netstandard2.0\WomensClinicApp.dll
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\bin\Debug\netstandard2.0\WomensClinicApp.pdb
-C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\netstandard2.0\WomensClinicApp.csprojAssemblyReference.cache
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\netstandard2.0\Views\Appointements.xaml.g.cs
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\netstandard2.0\Views\Content.xaml.g.cs

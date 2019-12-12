@@ -1122,3 +1122,9 @@ C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\De
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\app2.jpg
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\app1.jpg
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\app3.jpg
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\app4.jpg
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\lo1.jpg
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\p2.png
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\lo2.jpg
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\plain22.jpg
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\plain223.jpg
