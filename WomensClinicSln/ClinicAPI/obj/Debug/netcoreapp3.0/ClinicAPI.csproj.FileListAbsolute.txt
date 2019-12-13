@@ -125,3 +125,4 @@ C:\Xamarin\Clinic\WomensClinicSln\ClinicAPI\bin\Debug\netcoreapp3.0\System.Compo
 C:\Xamarin\Clinic\WomensClinicSln\ClinicAPI\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
 C:\Xamarin\Clinic\WomensClinicSln\ClinicAPI\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Xamarin\Clinic\WomensClinicSln\ClinicAPI\obj\Debug\netcoreapp3.0\ClinicAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Xamarin\Clinic\WomensClinicSln\ClinicAPI\obj\Debug\netcoreapp3.0\ClinicAPI.csprojAssemblyReference.cache

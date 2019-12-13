@@ -93,6 +93,7 @@ namespace WomensClinicApp.ViewModels
 
                         var http = new HttpClient();
 
+
                         var post = await http.PostAsync(uri, content);
 
                         await NavigationService.NavigateAsync("Master/NavigationPage/Content", useModalNavigation: true);

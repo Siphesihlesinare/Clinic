@@ -4,15 +4,11 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="WomensClinicApp.Views.Reminders" BackgroundImageSource="lo2.jpg">
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add An Appointment">
-            --><!--<ToolbarItem.IconImageSource>
-                <OnPlatform x:TypeArguments="ImageSource">
-                    <On Platform="Android, UWP" Value="plus.png"/>
-                </OnPlatform>
-            </ToolbarItem.IconImageSource>--><!--
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Appointment List"> 
+            
         </ToolbarItem>
-    </ContentPage.ToolbarItems>-->
+    </ContentPage.ToolbarItems>
     <ListView  HasUnevenRows="True" ItemsSource="{Binding AllAppointments}" >
         <ListView.ItemTemplate>
             <DataTemplate>
