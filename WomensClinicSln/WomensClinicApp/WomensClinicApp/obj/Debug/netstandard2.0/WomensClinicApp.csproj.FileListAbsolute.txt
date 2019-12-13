@@ -35,3 +35,4 @@ C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\nets
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\netstandard2.0\WomensClinicApp.dll
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\netstandard2.0\WomensClinicApp.pdb
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp\obj\Debug\netstandard2.0\WomensClinicApp.csprojAssemblyReference.cache

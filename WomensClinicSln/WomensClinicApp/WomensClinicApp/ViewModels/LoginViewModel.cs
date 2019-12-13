@@ -83,7 +83,7 @@ namespace WomensClinicApp.ViewModels
                 {
                     PasswExist = true;
                     _profile.SetLoggedinUser(knownUser);
-                    await NavigationService.NavigateAsync("Content");
+                    await NavigationService.NavigateAsync("Master/NavigationPage/Content",useModalNavigation:true);
                     return;
                 }
                 else
