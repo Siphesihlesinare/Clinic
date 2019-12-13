@@ -3,6 +3,7 @@ C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\De
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\android\assets\mscorlib.dll
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\android\assets\Prism.dll
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\android\assets\Prism.Forms.dll
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\android\assets\Prism.Unity.Forms.dll

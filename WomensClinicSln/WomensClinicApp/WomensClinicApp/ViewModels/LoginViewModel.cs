@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Newtonsoft.Json;
+using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -6,6 +7,7 @@ using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using WomensClinicApp.Messages;
 using WomensClinicApp.Models;
 using WomensClinicApp.Service;
@@ -62,40 +64,57 @@ namespace WomensClinicApp.ViewModels
 
         private async void ExecuteCommandSend()
         {
-
-            var knownUser = await _database.GetUserByIDNumber(UserInfo.IDN);
-            //var Infor = UserInfo;I
-            if (UserInfo.IDN == null)
+            try
             {
-                await _dialogService.DisplayAlertAsync("Alert", "ID Number is required!", "ok");
-            }
-            else if (UserInfo.Password == null)
-            {
-                await _dialogService.DisplayAlertAsync("Alert", "PassWord is required", "ok");
-            }
-            else if (UserInfo.Password != knownUser.Password || UserInfo.IDN != knownUser.IDN)
-            {
-                await _dialogService.DisplayAlertAsync("Alert", "Wrong ID Number or Password, Please Try again!", "ok");
-            }
-            else
-            {
-                if (knownUser.Password == UserInfo.Password)
+                var knownUser = await _database.GetUserByIDNumber(UserInfo.IDN);
+                //var Infor = UserInfo;I
+                if (UserInfo.IDN == null)
                 {
-                    PasswExist = true;
-                    _profile.SetLoggedinUser(knownUser);
-                    await NavigationService.NavigateAsync("Master/NavigationPage/Content",useModalNavigation:true);
-                    return;
+                    await _dialogService.DisplayAlertAsync("Alert", "ID Number is required!", "ok");
+                }
+                else if (UserInfo.Password == null)
+                {
+                    await _dialogService.DisplayAlertAsync("Alert", "PassWord is required", "ok");
+                }
+                else if (UserInfo.Password != knownUser.Password || UserInfo.IDN != knownUser.IDN)
+                {
+                    await _dialogService.DisplayAlertAsync("Alert", "Wrong ID Number or Password, Please Try again!", "ok");
                 }
                 else
                 {
-                    PasswExist = false;
-                }
-                if (PasswExist == false)
-                {
-                    await _dialogService.DisplayAlertAsync("ALERT!", "Incorrect password, please try again", "ok");
+                    if (knownUser.Password == UserInfo.Password)
+                    {
+                        PasswExist = true;
+                        _profile.SetLoggedinUser(knownUser);
+                        var userLogin = new { IdNumber = knownUser.IDN, Password = knownUser.Password };
+                        var json = JsonConvert.SerializeObject(userLogin);
+                        var uri = "http://10.0.2.2:5000/Clinic";
+                        var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+                        var http = new HttpClient();
+
+                        var post = await http.PostAsync(uri, content);
+
+                        await NavigationService.NavigateAsync("Master/NavigationPage/Content", useModalNavigation: true);
+                        return;
+                    }
+                    else
+                    {
+                        PasswExist = false;
+                    }
+                    if (PasswExist == false)
+                    {
+                        await _dialogService.DisplayAlertAsync("ALERT!", "Incorrect password, please try again", "ok");
+                    }
+
                 }
 
             }
+            catch (Exception ex)
+            {
+                await _dialogService.DisplayAlertAsync("ALERT!", "This User does not Exist", "ok");
+            }
+            
 
 
         }

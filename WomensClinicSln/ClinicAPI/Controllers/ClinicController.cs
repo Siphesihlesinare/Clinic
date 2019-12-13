@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ClinicAPI.Controllers
 {
-    [Route("controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ClinicController : ControllerBase
     {
@@ -22,9 +22,9 @@ namespace ClinicAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Login>> PostLoginDetails(Login tee)
+        public async Task<ActionResult<Login>> PostLoginDetails(Login login)
         {
-            _context.LoginDetails.Add(tee);
+            _context.LoginDetails.Add(login);
             await _context.SaveChangesAsync();
 
             return Ok();

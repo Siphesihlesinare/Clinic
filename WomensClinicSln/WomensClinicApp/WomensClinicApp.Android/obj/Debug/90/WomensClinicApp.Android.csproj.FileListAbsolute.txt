@@ -1128,3 +1128,5 @@ C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\De
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\lo2.jpg
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\plain22.jpg
 C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\res\drawable\plain223.jpg
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\linksrc\Newtonsoft.Json.dll
+C:\Xamarin\Clinic\WomensClinicSln\WomensClinicApp\WomensClinicApp.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
